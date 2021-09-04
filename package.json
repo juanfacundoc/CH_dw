@@ -1,13 +1,13 @@
 {
-  "name": "proyecto",
+  "name": "proyecto-final-coderhouse",
   "version": "1.0.0",
-  "description": "",
+  "description": "Trabajo final para el curso de desarrollo web de Coderhouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/general.scss css/estilos.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "EIIPD",
+  "author": "Juan Facundo Corti",
   "license": "ISC"
 }
