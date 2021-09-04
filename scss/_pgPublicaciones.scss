@@ -1,0 +1,46 @@
+
+
+/* ----- PUBLICACIONES ----- */
+
+
+
+.principal--publicaciones {
+    background-color: $blanco;
+    color: $negro;
+    margin-top: 65px;
+
+    h1{
+        padding-top: 65px;
+        padding-bottom: 25px;
+        text-align: center;
+        color: $rojo;
+        font-family: 'Comfortaa', cursive;
+        font-size: 1.5rem;}
+
+    table {
+        width: 100%;
+        tr{
+            font-size: 0.65rem;
+            th{
+                
+                font-family: 'Roboto', sans-serif;
+                color: $azul;}
+        
+            td{
+                // width: 10%;
+                padding: 10px;
+                text-align: center;}
+            .titulo{
+                width: 35%;
+            }}}
+    
+    
+
+    a {
+        color: $negro;
+        text-decoration: none;
+
+        &:hover {
+            color: $azul;}
+    }
+}

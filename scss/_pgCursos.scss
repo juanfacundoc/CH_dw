@@ -1,0 +1,65 @@
+
+
+/* ----- CURSOS ----- */
+
+
+
+.principal--cursos {
+    height: 100vh;
+    background-image: url("../imgs/bgbasket.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+
+.principal__seccion {
+    &--cursos {
+        padding-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__curso {
+        margin: 2.5% 5%;
+        border-radius: 25px;
+        color: #f2f2f2;
+        font-size: 0.8rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 25vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: transform 0.15s ease-in-out;
+        transform: scale(1);
+        -webkit-filter: drop-shadow(5px 5px 5px hsl(0, 0%, 10%));
+        filter: drop-shadow(5px 5px 5px hsl(0, 0%, 10%));
+    
+        h2{
+            -webkit-filter: drop-shadow(5px 5px 5px hsl(0, 0%, 0%));
+            filter: drop-shadow(0px 0px 5px hsl(0, 0%, 10%));
+        }
+
+        &:hover,
+        &:focus{
+            transform: scale(1.05);
+            -webkit-filter: drop-shadow(0 0 5px #f2f2f2);
+            filter: drop-shadow(0 0 5px #f2f2f2);
+        }
+
+        @each $curso in Motivacion, Comunicacion, Atencion, Emociones, Valores, Liderazgo {
+            &--#{$curso} {
+                background-image: url("../imgs/curso#{$curso}.jpeg");
+            }
+        }
+    }
+}
+
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="EIIPD, profesional, psicología, deporte, deportiva, ejercicio,
+                                    argentina, research, psychology, sport, exercise">
+    <meta name="description" content="Si te interesa participar de nuestros proyectos de investigación,
+    como profesional del la Psicología del Deporte o como participante, dejanos tus datos para ponernos
+    en contacto con vos.">
+    <title>EIIPD | Sumate</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+<body id="pgSumate">
+ 
+<!------------------------------ MENU ------------------------------>
+<nav class="navbar navbar-dark">
+    <div class="container-fluid">
+    <a href="../index.html" class="logo">
+        <img src="../imgs/logo.png" alt="Logo del Equipo de Investigación e Innovación en Psicología del Deporte a color"></a>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html">INICIO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./nosotrxs.html">NOSOTRXS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./cursos.html">CURSOS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./publicaciones.html">PUBLICACIONES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">SUMATE</a>
+        </li>
+        <li class="nav-item">
+            <a class="boton" href="./ingresa.html">INGRESA</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+
+
+
+
+<!-------------- SECCIÓN PRINCIPAL | Iniciar registro ------------->
+      
+    <main class="principal principal--sumate">
+
+        <!-- PROFESIONALES -->
+        <form action="">
+            <fieldset>
+            
+                <h1>Profesionales</h1>
+                <p>¿Sos profesional de la psicología y/o del deporte (o estás
+                    por recibirte) y querés ser parte de EIIPD? ¡SUMATE!
+                </p>
+
+                <div class="formulario">
+                    <div class="campo">
+                        <label for="correops">Correo electrónico:</label>
+                        <input type="mail" name="correops" placeholder="ejemplo@correo.com">        
+                    </div>
+                    <div class="campo">
+                        <label for="contrasena1">Contraseña:</label>
+                        <input type="password" name="contrasena1">
+                    </div>
+                    <div class="campo">
+                        <label for="contrasena2">Repetí tu<br>contraseña:</label>
+                        <input type="password" name="contrasena2">
+                    </div>
+                </div>
+
+                <input type="submit" value="Iniciar registro" id="IR_PS">    
+
+            </fieldset>
+        </form>
+    
+        <!-- PARTICIPANTES -->
+        <form action="">
+            <fieldset>
+                
+                <h2>Participantes</h2>
+                <p>¿Sos parte de la comunidad deportiva (deportista, entrenador/x,
+                    dirigente, familia de deportista, etc.) y te interesa participar
+                    en nuestras investigaciones? ¡SUMATE!</p>
+                
+                <div class="formulario">
+                    <div class="campo">
+                        <label for="correopa">Correo electrónico:</label>
+                        <input type="mail" name="correopa" placeholder="ejemplo@correo.com">        
+                    </div>
+                    <div class="campo">
+                        <label for="contrasena3">Contraseña:</label>
+                        <input type="password" name="contrasena3">
+                    </div>
+                    <div class="campo">
+                        <label for="contrasena4">Repetí tu<br>contraseña:</label>
+                        <input type="password" name="contrasena4">        
+                    </div>
+                </div>
+                
+                <input type="submit" value="Iniciar registro" id="IR_PA">    
+
+            </fieldset>
+        </form>
+        
+    
+        <form action="" id="contacto">
+            <fieldset>
+                <h2>Contacto</h2> 
+                <p> Si tenés alguna consulta sobre EIIPD, sus contenidos o su funcionamiento, 
+                    ¡no dudes en contactarnos!
+                </p>
+                <div class="formulario">
+
+                    <div class="campo">
+                        <label for="correoct">Correo electrónico:</label>
+                        <input type="mail" name="correoct" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="tema">¿Sobre qué tema<br>es tu consulta?</label>
+                        <select name="tema">
+                            <option value="inc">Incorporación de profesionales</option>
+                            <option value="par">Participación en investigaciones</option>
+                            <option value="nos">Nosotrxs</option>
+                            <option value="pub">Nuestras publicaciones</option>
+                            <option value="cur">Nuestros cursos</option>
+                            <option value="sol">Solicitar psicólogx del deporte</option>
+                            <option value="otr">Otro</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="consulta">Ingresá tu consulta:</label>
+                        <textarea rows="4" cols="15" name="consulta"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="Enviar" id="Consulta">    
+
+            </fieldset>
+        </form>
+
+    </main>
+
+
+
+
+<!----------------- ÚLTIMA SECCIÓN | Footer ----------------->
+<hr>
+<footer class="zocalo">
+  
+    <form action="" class="zocalo__form">
+        <label for="correo">Subscribite a nuestro newsletter:<br></label>
+        <div>
+            <input type="email" name="correo" placeholder="ejemplo@correo.com">
+            <input type="submit" value="Subscribirme">
+        </div>
+    </form>
+        
+    <div class="zocalo__redes">
+        <a href="./sumate.html#contacto" target="_blank">
+            <img src="../imgs/icn-mailc.png" alt="Ícono de correo con fondo transparente">
+        </a>
+        <a href="https://www.instagram.com/eiipd.ar/" target="_blank">
+            <img src="../imgs/icn-instagramc.png" alt="Ícono de Instagram con fondo transparente">
+        </a>
+        <a href="https://www.facebook.com/eiipd.ar/" target="_blank">
+            <img src="../imgs/icn-facebookc.png" alt="Ícono de Facebook con fondo transparente">
+        </a>
+        <a href="https://open.spotify.com/show/00maOGT4EWexGCX40ixiec" target="_blank">
+            <img src="../imgs/icn-spotifyc.png" alt="Ícono de Spotify con fondo transparente">
+        </a>
+    </div>
+
+</footer>  
+    
+
+  <!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
+  crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
+  crossorigin="anonymous">
+</script>  
+  
+    
+</body>
+</html>
