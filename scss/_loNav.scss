@@ -1,210 +1,154 @@
 
-/* ----- NAV ----- */
+/* ---------- NAV ---------- */
 
 // ----- General -----
 
 .navbar {
+    height: 48.5px;
+    padding: 8px 0;
+    top: 0; 
+    right: 0;
+    left: 0;
+    z-index: 1030;
     position: fixed;
     display: flex;
     flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
-    top: 0; 
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    height: 48.5px;
-    padding: 8px 0;
     border-bottom: 1px solid $blanco;
     background-color: $negro;
     -webkit-filter: drop-shadow(0 0 1.5em $negro);
     filter: drop-shadow(0px 0px 1.5em $negro);
-  
     > .container-fluid {
+        width: 100%;
         display: flex;
         flex-wrap: inherit;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
-      }
-}
 
-
-// ----- Logo -----
-
-nav {
-    a {
-        img {
-            width: 40%;
-            margin: 12px 20px 0;
-            transition: filter .25s ease-in-out;
-            -webkit-filter: saturate(0%) brightness(85%) contrast(150%);
-            filter: saturate(0%) brightness(85%) contrast(150%);           
-        }
-    
-        &:hover,
-        &:focus {
+        // ----- Logo -----
+        a {
             img {
-                -webkit-filter: saturate(100%) brightness(100%) contrast(100%); 
-                filter: saturate(100%) brightness(100%) contrast(100%);      
-            }
-        }
+                width: 40%;
+                margin: 12px 20px 0;
+                transition: filter .25s ease-in-out;
+                -webkit-filter: saturate(0%) brightness(85%) contrast(150%);
+                filter: saturate(0%) brightness(85%) contrast(150%);}    
+            &:hover,
+            &:focus {
+                img {
+                    -webkit-filter: saturate(100%) brightness(100%) contrast(100%); 
+                    filter: saturate(100%) brightness(100%) contrast(100%);}}}
+
+        // ----- Toggler -----
+        button:focus:not(:focus-visible) {
+            outline: 0;}
+        [type=button] {
+            -webkit-appearance: button;}
+        button:not(:disabled),
+        [type=button]:not(:disabled) {
+            cursor: pointer;}
+        .navbar-toggler {
+            color: rgba(255, 255, 255, 0.55);
+            border-color: rgba(255, 255, 255, 0.1);
+            padding: 0.25rem 0.5rem;
+            font-size: 1rem;
+            margin-top: -3rem;
+            margin-right: 0.5rem;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.55);
+            border-radius: 50%;
+            transition: box-shadow 0.15s ease-in-out;
+            &-icon {
+                width: 1.5em;
+                height: 1.5em;
+                display: inline-block;
+                vertical-align: middle;
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;}
+            &:hover {
+            text-decoration: none;}
+            &:focus {
+                text-decoration: none;
+                outline: 0;
+                box-shadow: 0 0 0 0.25rem;}}
+
+        // ----- Links -----
+        .collapse:not(.show) {
+            display: none;
+            margin-top: 16px;
+            background-color: transparent;}
+        .navbar-collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center;
+            background-color: rgba(47, 55, 56,0.75);
+            padding: 1.5rem;
+            margin-top: -45px;
+            .navbar-nav {
+                width: 100%;
+                padding-left: 0;
+                margin-bottom: 0;
+                margin-right: auto;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                .nav-link {
+                    display: block;
+                    padding: 8px 16px;
+                    font-size: 1em;
+                    text-align: center;
+                    color: rgba(242, 242, 242, 0.75);
+                    text-decoration: none;
+                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+                    &.active,
+                    &:hover,
+                    &:focus {
+                        color:$amarillo;}}
+
+                // ----- Ingresa -----
+                .boton {
+                    height: 1.5em;
+                    padding: 0.375rem 0.75rem;
+                    font-size: 1rem;
+                    font-family: inherit;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    text-align: center;
+                    text-decoration: none;
+                    color: $amarillo;
+                    border: 1px solid $amarillo;
+                    border-radius: 0.25rem;
+                    display: inline-block;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    user-select: none;
+                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+                    &:hover,
+                    &:focus,
+                    &:active, 
+                    &.active, 
+                    &.dropdown-toggle.show {
+                        color: $negro;
+                        background-color: $amarillo;}
+                    &:active, 
+                    &.active, 
+                    &.dropdown-toggle.show {
+                    border-color: $amarillo;}}}}
     }
 }
 
 
-
-
-// ----- Links -----
-
-.navbar-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    margin-right: auto;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-.nav-link {
-    display: block;
-    padding: 8px 16px;
-    font-size: 1em;
-    text-align: center;
-    color: rgba(242, 242, 242, 0.75);
-    text-decoration: none;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-
-    &.active,
-    &:hover,
-    &:focus {
-        color:$amarillo;
-    }
-  }
-
 @media (prefers-reduced-motion: reduce) {
-  .nav-link {
-    transition: none;
-    }
-  }
-
-.navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center;
-    background-color: rgba(47, 55, 56,0.75);
-    padding: 1.5rem;
-    margin-top: -45px;
-    }
-
-.collapse:not(.show) {
-    display: none;
-    margin-top: 16px;
-    background-color: transparent;
-}
-// ----- Ingresa -----
-
-.boton {
-    height: 1.5em;
-    display: inline-block;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-family: inherit;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    color: $amarillo;
-    border: 1px solid $amarillo;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-  
-    &:hover,
-    &:focus,
-    &:active, 
-    &.active, 
-    &.dropdown-toggle.show {
-      color: $negro;
-      background-color: $amarillo;
-    }
-    
-    &:active, 
-    &.active, 
-    &.dropdown-toggle.show {
-      border-color: $amarillo;
-    }
-    
-    
-
-}
-@media (prefers-reduced-motion: reduce) {
-    .boton {
-       transition: none;
-    }
-    }
-
-button:focus:not(:focus-visible) {
-    outline: 0;
-    }
-
-[type=button] {
-    -webkit-appearance: button;
-    }
-
-button:not(:disabled),
-[type=button]:not(:disabled) {
-    cursor: pointer;
-    }
-
-// ----- Toggler -----
-
-
-.navbar-toggler {
-    color: rgba(255, 255, 255, 0.55);
-    border-color: rgba(255, 255, 255, 0.1);
-    padding: 0.25rem 0.5rem;
-    font-size: 1rem;
-    margin-top: -3rem;
-    margin-right: 0.5rem;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.55);
-    border-radius: 50%;
-    transition: box-shadow 0.15s ease-in-out;
-  
-    &-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        display: inline-block;
-        width: 1.5em;
-        height: 1.5em;
-        vertical-align: middle;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-    }
-
-    &:hover {
-      text-decoration: none;
-    }
-  
-    &:focus {
-        text-decoration: none;
-        outline: 0;
-        box-shadow: 0 0 0 0.25rem;
-    }
-  }
-
-@media (prefers-reduced-motion: reduce) {
+    .nav-link,
+    .boton,
     .navbar-toggler {
-        transition: none;
-    }
+        transition: none;}
 }
-  
