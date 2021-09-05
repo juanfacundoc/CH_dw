@@ -2,33 +2,25 @@
 
 /* ----- NOSOTRXS ----- */
 
-
-
 .principal--nosotrxs {
-
     margin-top: 65px;
-    background-color: #f2f2f2;
     color: #2f3738;
     text-align: center;
-
+    background-color: #f2f2f2;
     h1, h2 {
         font-family: 'Comfortaa', cursive;
         font-size: 1rem;
-        color: $rojo;
-        
-    }
-
+        color: $rojo;}
     section {
         width: 90%;
+        height: auto;
         margin: auto;
         padding: 50px 0;
-        height: auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items:stretch;
-
         div {
             width: 47%;
             padding: 5px;
@@ -36,39 +28,27 @@
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            text-align: center;   
-        }
-
+            text-align: center;
+            video{
+                width: 100%;
+                height: 225px;
+                border-radius: 50px;
+                -webkit-filter: drop-shadow(2px 2px 2px #2f3738);
+                filter: drop-shadow(2px 2px 5px #2f3738);}}
         article {
             margin: 0 25px;
             display: block;
             text-align: center;
-
             p {
                 font-family: 'Roboto', sans-serif;
-                font-size: .85rem;
-            }
-
+                font-size: .85rem;}
             img{
                 transform: scale(0.5); 
                 filter: opacity(75%);}
-
             .coordinador{
                 margin: 0 25px;
                 width: 300px;}
-            
             .miembro{
                 font-size: .75rem;
                 margin: 0 10px;
-                width: 200px;}
-        }
-    }
-
-    video{
-        width: 100%;
-        height: 225px;
-        border-radius: 50px;
-        -webkit-filter: drop-shadow(2px 2px 2px #2f3738);
-        filter: drop-shadow(2px 2px 5px #2f3738);
-    }
-}
+                width: 200px;}}}}
