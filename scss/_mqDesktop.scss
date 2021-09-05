@@ -1,203 +1,155 @@
-/* ----- DESKTOP ----- */
+
+
+
+/* ---------- DESKTOP ---------- */
 @media screen and (min-width: 768px) and (orientation: landscape) {
-:root{
-    font-size: 18px;
-}
-/* --- PAGINAS --- */
+    :root{
+        font-size: 18px;}
 
 
-/* INICIO */
-.principal--inicio{
-    height: 250vh;
+    /* ----- PAGINAS ----- */
+    /* INICIO */
+    .principal--inicio{
+        height: 250vh;
+        .novedades{
+            article{
+                flex-direction: row;
+                &:nth-of-type(2){
+                    flex-direction: row-reverse;}
+                div{
+                    width: 45%;
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        transition: filter .15s ease-in-out, transform .15s ease-in-out;
+                        &:hover{
+                            transform: scale(1.05);
+                            -webkit-filter: drop-shadow(-0.075em -0.075em 0em #f2f2f2);
+                            filter: drop-shadow(-0.075em -0.075em 0em #f2f2f2);}}
+                    p{
+                        margin-top: 25px;}
+                    img {
+                        -webkit-filter: drop-shadow(0.25em 0.25em 0.25em hsl(0, 0%, 10%));
+                        filter: drop-shadow(0.25em 0.25em 0.25em hsl(0, 0%, 10%));}}}}
+    }
 
-.novedades{
-    article{
+
+    /* NOSOTRXS */
+    .principal--nosotrxs{
+        video{
+            width:fit-content;}
+    }
+    
+    
+    /* CURSOS */
+    .principal--cursos{
+        padding-bottom: 200px;
+    }
+    
+    
+    /* PUBLICACIONES */
+    .principal--publicaciones {
+        table {
+            tr{
+                font-size: 1rem;}}
+    }
+
+
+
+    /* SUMATE */
+    .principal--sumate {
+        height: 80vh;
+        flex-direction: row;    
+        form{
+            height: 70vh;
+            width: 30%;
+            fieldset{
+                height: 100%;
+                justify-content: space-evenly;}}
+        form:nth-of-type(3){
+            width: 40%;}
+    }
+
+
+    /* INGRESA */
+    .principal--ingresa {
         flex-direction: row;
-        &:nth-of-type(2){
-            flex-direction: row-reverse;
-        }
-        
-        div{
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            a {
-                transition: filter .15s ease-in-out, transform .15s ease-in-out;
-                &:hover{
-                    transform: scale(1.05);
-                    -webkit-filter: drop-shadow(-0.075em -0.075em 0em #f2f2f2);
-                    filter: drop-shadow(-0.075em -0.075em 0em #f2f2f2);}}
-            p{
-                margin-top: 25px;}
-            img {
-                -webkit-filter: drop-shadow(0.25em 0.25em 0.25em hsl(0, 0%, 10%));
-                filter: drop-shadow(0.25em 0.25em 0.25em hsl(0, 0%, 10%));}
-        } 
-    }
-}}
+        justify-content: space-evenly;
+        form{
+            width: 35%;
+            fieldset{
+                height: 35vh;
+                justify-content: space-evenly;}}
 
-            
-
-            
-
-
-
-
-
-/* NOSOTRXS */
-
-.principal--nosotrxs{
-    video{
-        width:fit-content;}
-    
-}
-/* CURSOS */
-
-.principal--cursos{
-    padding-bottom: 200px;
-}
-/* PUBLICACIONES */
-
-.principal--publicaciones {
-    table {
-        tr{
-            font-size: 1rem;}}}
-
-
-
-/* SUMATE */
-
-.principal--sumate {
-    height: 80vh;
-    flex-direction: row;
-    
-    form{
-        height: 70vh;
-        width: 30%;
-        fieldset{
-            height: 100%;
-            justify-content: space-evenly;
-        }
-    }
-    form:nth-of-type(3){
-        width: 40%;}
-    
-}
-/* INGRESA */
-
-
-.principal--ingresa {
-    flex-direction: row;
-    justify-content: space-evenly;
-
-    form{
-        width: 35%;
-        fieldset{
-            height: 35vh;
-            justify-content: space-evenly;
-        }
     }
 
-}
 
-/* --- COMPONENTES --- */
-/* NAV */
-// ----- General -----
-
-.navbar {
-    flex-wrap: nowrap; 
-    justify-content: flex-start;
-    padding: 8px 4px;}
-
-    
-    // ----- Logo -----
-
-
-    nav {
+    /* --- COMPONENTES --- */
+    /* NAV */
+    .navbar {
+        flex-wrap: nowrap; 
+        justify-content: flex-start;
+        padding: 8px 4px;
         a {
             img {
-
                 margin-top: 65px;
-                margin-left: 35px;
-                }}}
+                margin-left: 35px;}}
+        .navbar-toggler {
+            display: none;}
+        .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+            .navbar-nav {
+                margin-top: -1rem;
+                flex-direction: row;
+                background-color: $negro;
+                .nav-link {
+                    padding-right: 0.5rem;
+                    padding-left: 0.5rem;}}}      
+    }
 
 
-    .navbar-nav {
+    /* CAROUSEL */
+    .carousel{
+        height: 90vh;
+        margin-top: 135px;
+        .carousel-item {
+            height: 90vh;
+            #img1 {
+                background-position:bottom;
+                background-image: url("../imgs/inicio-gal-1h.png");}
+            #img2 {
+                background-position:bottom;
+                background-image: url("../imgs/inicio-gal-2h.png");}
+            #img3 {
+                background-position:center;
+                background-image: url("../imgs/inicio-gal-3h.png");}}
+        .carousel-caption {
+                    p {
+                        font-size: 2rem;}
+                    #capt3{
+                        text-align: center;}
+                    .equipo{
+                        transform: translateY(8rem);}}
+    }                 
+
+
+    /* FOOTER */
+    .zocalo {
+        height: 6rem;
         flex-direction: row;
-        margin-top: -1rem;
-        background-color: $negro;
+        .zocalo__form {
+            width: 45%;
+            padding: 20px;}
+        .zocalo__redes {
+            width: 45%;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 2.5em;}}}}
 
-        .nav-link {
-            padding-right: 0.5rem;
-            padding-left: 0.5rem;
-        }
-    }
-
-    .navbar-collapse {
-        display: flex !important;
-        flex-basis: auto;
-    }
-
-    .navbar-toggler {
-        display: none;
-    }
-
-
-
-
-
-/* CAROUSEL */
-
-.carousel{
-    margin-top: 135px;
-    height: 90vh;
-}
-
-.carousel-item {
-    height: 90vh;
-    
-    #img1 {
-        background-position:bottom;
-        background-image: url("../imgs/inicio-gal-1h.png");}
-    #img2 {
-        background-position:bottom;
-        background-image: url("../imgs/inicio-gal-2h.png");}
-    #img3 {
-        background-position:center;
-        background-image: url("../imgs/inicio-gal-3h.png");}}
-.carousel-caption {
-            p {
-                font-size: 2rem;
-
-            }
-            #capt3{
-                text-align: center;
-            }
-            .equipo{
-              transform: translateY(8rem);}
-          }
-                     
-
-/* FOOTER */
-    
-.zocalo {
-    height: 6rem;
-    flex-direction: row;
-
-    .zocalo__form {
-        width: 45%;
-        padding: 20px;}
-    .zocalo__redes {
-        width: 45%;
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                width: 2.5em;}}
-            }
-        }
-            
 }
 
 
