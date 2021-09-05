@@ -8,60 +8,45 @@
         a {
             img {
             -webkit-filter: saturate(100%) brightness(100%) contrast(100%); 
-            filter: saturate(100%) brightness(100%) contrast(100%);;  
-            }
-        }
-    }
-}
-
-.principal--inicio {
-    height: 255vh;
-    background-color: $negro;
-
-    .novedades {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-        article {
-            padding: 25px;
+            filter: saturate(100%) brightness(100%) contrast(100%);}}}
+    .principal--inicio {
+        height: 255vh;
+        background-color: $negro;
+        .novedades {
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            align-items: center;
-
-            div {
-                width: 100%;
-                padding-bottom: 15px;
-                text-align:justify;
+            article {
+                padding: 25px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
-            
-                h1,h2 {
-                    font-size: 1.5em;
-                    color: $amarillo;}
-                
-                p {
-                    font-size: 1em;
-                    line-height: 2em;
-                    color: $blanco}}
-            
-            a {
-                transition: filter .15s ease-in-out, transform .15s ease-in-out;
-                text-decoration: none;}
-                
-                
-
-            img {
-                border-radius: 3.5em;
-                width: 100%;
-                transform: scale(1);
-                -webkit-filter: drop-shadow(0.25em 0.25em 0.25em $negro);
-                filter: drop-shadow(0.25em 0.25em 0.25em $negro);}
-
+                align-items: center;
+                div {
+                    width: 100%;
+                    padding-bottom: 15px;
+                    text-align:justify;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    h1,h2 {
+                        font-size: 1.5em;
+                        color: $amarillo;}
+                    p {
+                        font-size: 1em;
+                        line-height: 2em;
+                        color: $blanco}
+                    a {
+                        transition: filter .15s ease-in-out, transform .15s ease-in-out;
+                        text-decoration: none;}}
+                img {
+                    width: 100%;
+                    transform: scale(1);
+                    border-radius: 3.5em;
+                    -webkit-filter: drop-shadow(0.25em 0.25em 0.25em $negro);
+                    filter: drop-shadow(0.25em 0.25em 0.25em $negro);}
+            }
         }
     }
-
 }
