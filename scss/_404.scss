@@ -1,0 +1,27 @@
+.principal--404{
+    font-size: 25px;
+    height: 95vh;
+    background-color: $amarillo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 45px;
+    h1{
+        padding-top: 65px;
+        padding-bottom: 25px;
+        text-align: center;
+        color: $negro;
+        font-family: 'Comfortaa', cursive;
+        font-size: 1.5em;}
+    p{
+        font-family: 'Roboto', sans-serif;
+        color: $negro;
+        a{
+            text-decoration: none;
+            color: $azul;
+        }
+    }
+    
+}
