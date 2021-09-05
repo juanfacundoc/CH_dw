@@ -92,7 +92,9 @@
             color: $amarillo;}
         input[type="submit"]:hover,
         input[type="submit"]:focus{
-            background-color: $amarillo;}}
+            background-color: $amarillo;
+            color: $negro;
+            border: solid 1px $negro;}}
         
                 
     
