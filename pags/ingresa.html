@@ -7,95 +7,85 @@
     <meta name="keywords" content="EIIPD, ingreso, ingresa">
     <meta name="description" content="¿Querés participar en una de nuestras investigaciones vigentes?
     ¡Ingresá tu código acá y empezá ahora!">
-    <title>EIIPD | Ingresa</title>
+    <meta property="og:image" content="https://juanfacundoc.github.io/CH_dw/imgs/logotn.png"/>
     <link rel="stylesheet" href="../css/estilos.css">
-
+    <title>EIIPD | Ingresa</title>
 </head>
 <body id="pgIngresa">
  
+
+
+
 <!------------------------------ MENU ------------------------------>
-<nav class="navbar navbar-dark">
+<nav class="navbar">
     <div class="container-fluid">
-    <a href="../index.html" class="logo">
+    <a href="../index.html">
         <img src="../imgs/logo.png" alt="Logo del Equipo de Investigación e Innovación en Psicología del Deporte a color"></a>
-    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item">
-            <a class="nav-link" href="../index.html">INICIO</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./nosotrxs.html">NOSOTRXS</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./cursos.html">CURSOS</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./publicaciones.html">PUBLICACIONES</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./sumate.html">SUMATE</a>
-        </li>
-        <li class="nav-item">
-            <a class="boton" href="#">INGRESA</a>
-        </li>
-        </ul>
-    </div>
+        <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">INICIO</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./nosotrxs.html">NOSOTRXS</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./cursos.html">CURSOS</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./publicaciones.html">PUBLICACIONES</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sumate.html">SUMATE</a></li>
+                <li class="nav-item">
+                    <a class="boton" href="#">INGRESA</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
 
 
 
 
-
 <!-------------- SECCIÓN PRINCIPAL | Ingreso al sistema interno ------------->
       
-    <main class="principal principal--ingresa">
+<main class="principal principal--ingresa">
 
-        <form action="">
-            <fieldset>
-                <h1>Profesionales EIIPD</h1>
-                <div class="formulario">
-                    <div class="campo">
-                        <label for="usuario">Usuario:</label>
-                        <input type="text" name="usuario">
-                    </div>
-                    <div class="campo">
-                        <label for="contrasena">Contraseña:</label>
-                        <input type="password" name="contrasena">
-                    </div>
-                </div>
-                
-                <input type="submit" value="Ingresar" id="ingPS">    
+    <form action="">
+        <fieldset>
+            <h1>Profesionales EIIPD</h1>
+            <div class="formulario">
+                <div class="campo">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" name="usuario"></div>
+                <div class="campo">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" name="contrasena"></div>
+            </div>
+            <input type="submit" value="Ingresar" id="ingPS">
+        </fieldset>
+    </form>
 
-            </fieldset>
-        </form>
+    <form action="">
+        <fieldset>
+            <h2>¿Querés participar de nuestras investigaciones?</h2>
+            <div class="formulario">
+                <div class="campo">
+                    <label for="cod">Código de la investigación:</label>
+                    <input type="text" name="cod" placeholder="1234"></div>
+            </div>    
+            <input type="submit" value="Participar" id="ingPA">
+        </fieldset>
+    </form>
     
-        <form action="">
-            <fieldset>
-                <h2>¿Querés participar de nuestras investigaciones?</h2>
-                <div class="formulario">
-                    <div class="campo">
-                        <label for="cod">Código de la investigación:</label>
-                        <input type="text" name="cod" placeholder="1234">
-                    </div>
-                </div>    
-                
-                <input type="submit" value="Participar" id="ingPA">    
+</main>
 
-            </fieldset>
-        </form>
-        
-    </main>
 
-    
+
+
 <!----------------- ÚLTIMA SECCIÓN | Footer ----------------->
+
 <hr>
+
 <footer class="zocalo">
-  
     <form action="" class="zocalo__form">
         <label for="correo">Subscribite a nuestro newsletter:<br></label>
         <div>
@@ -106,32 +96,26 @@
         
     <div class="zocalo__redes">
         <a href="./sumate.html#contacto" target="_blank">
-            <img src="../imgs/icn-mailc.png" alt="Ícono de correo con fondo transparente">
-        </a>
+            <img src="../imgs/icn-mailc.png" alt="Ícono de correo con fondo transparente"></a>
         <a href="https://www.instagram.com/eiipd.ar/" target="_blank">
-            <img src="../imgs/icn-instagramc.png" alt="Ícono de Instagram con fondo transparente">
-        </a>
+            <img src="../imgs/icn-instagramc.png" alt="Ícono de Instagram con fondo transparente"></a>
         <a href="https://www.facebook.com/eiipd.ar/" target="_blank">
-            <img src="../imgs/icn-facebookc.png" alt="Ícono de Facebook con fondo transparente">
-        </a>
+            <img src="../imgs/icn-facebookc.png" alt="Ícono de Facebook con fondo transparente"></a>
         <a href="https://open.spotify.com/show/00maOGT4EWexGCX40ixiec" target="_blank">
-            <img src="../imgs/icn-spotifyc.png" alt="Ícono de Spotify con fondo transparente">
-        </a>
+            <img src="../imgs/icn-spotifyc.png" alt="Ícono de Spotify con fondo transparente"></a>
     </div>
 
-</footer>  
-    
+</footer>
 
-  <!-- Scripts -->
+
+
+
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
   integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
-  crossorigin="anonymous">
-</script>
-
+  crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
   integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" 
-  crossorigin="anonymous">
-</script>    
-    
+  crossorigin="anonymous"></script>
 </body>
 </html>
