@@ -1,85 +1,75 @@
-/* ----- TABLET ----- */
+
+
+/* ---------- TABLET ---------- */
+
 @media screen and (min-width: 576px) and (orientation: portrait) {
 
-:root{
-    font-size: 18px;
-}
-/* --- PAGINAS --- */
-
-/* INICIO */
-.principal--inicio{
-    height: 300vh;
-}
-
-/* NOSOTRXS */
-
-.principal--nosotrxs{
-    height: 350vh;
-}
-/* CURSOS */
- 
-.principal--cursos{
-    height: 100vh;
-}
-.principal__seccion__curso {
-    font-size: 1rem;
-    width: 300px;
-    height: 400px;}
-   
-
-/* PUBLICACIONES */
-.principal--publicaciones{
-    height: 50vh;
-}
-/* SUMATE */
-
-.principal--sumate{
-    padding-bottom: 200px;
-}
-
-/* INGRESA */
+    :root{
+        font-size: 18px;}
 
 
-/* --- COMPONENTES --- */
-/* NAV */
+    /* ----- PAGINAS ----- */
+
+    /* INICIO */
+    .principal--inicio{
+        height: 300vh;}
 
 
-
-/* CAROUSEL */
-.carousel-item {
-    #img1, #img3 {
-        background-position: center;}
-    #img2{
-        background-position:bottom;}}
-.carousel-caption {
-    p {
-        font-size: 2rem;}
-    #capt3{
-        text-align: end;}
-    .equipo{
-        
-        transform: translateY(8rem);}}
+    /* NOSOTRXS */
+    .principal--nosotrxs{
+        height: 350vh;}
 
 
-/* FOOTER */
+    /* CURSOS */
+    .principal--cursos{
+        height: 100vh;}
+    .principal__seccion__curso {
+        width: 300px;
+        height: 400px;
+        font-size: 1rem;}
     
-.zocalo {
-    height: 10rem;
 
-    .zocalo__form {
-        width: 80%;
-        padding: 20px;}
-    .zocalo__redes {
-        width: 45%;
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                width: 2em;}}
-            }
-        }
-            
+    /* PUBLICACIONES */
+    .principal--publicaciones{
+        height: 50vh;}
+
+
+    /* SUMATE */
+    .principal--sumate{
+        padding-bottom: 200px;}
+
+
+
+    /* ----- COMPONENTES ----- */
+    /* CAROUSEL */
+    .carousel-item {
+        #img1, #img3 {
+            background-position: center;}
+        #img2{
+            background-position:bottom;}}
+    .carousel-caption {
+        p {
+            font-size: 2rem;}
+        #capt3{
+            text-align: end;}
+        .equipo{
+            transform: translateY(8rem);}}
+
+
+    /* FOOTER */
+    .zocalo {
+        height: 10rem;
+        .zocalo__form {
+            width: 80%;
+            padding: 20px;}
+        .zocalo__redes {
+            width: 45%;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 2em;}}}}       
 }
 
 
